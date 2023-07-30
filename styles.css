@@ -4,7 +4,7 @@ margin: 0;
 box-sizing: border-box;
 }
 
-header, footer {
+header, footer  {
     height: 20vh;
     text-align: center;
     color: aquamarine;
@@ -12,7 +12,6 @@ header, footer {
 }
 header h1 {
     padding-top: 50px;
-
 }
 
 #display, #choose {
@@ -27,20 +26,36 @@ header h1 {
 .vs, .choice {
     border: 1px solid white;
     border-top: 5px solid rgb(255, 255, 255);
-    padding: 50px;
     border-radius: 10px;
     font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+.vs {
+    width: 150px;
+    height: 150px;
+}
+
 
 #choose {
     height: 30vh;
 }
 
 .choice {
-    padding: 20px 40px;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
 }
 
 footer {
     height: 10vh;
 }
 
+#winner {
+    height: 10vh;
+    background-color: rgb(94, 69, 63);
+    color: aquamarine;
+    font-size: 3rem;
+    text-align: center;
+}
